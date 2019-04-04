@@ -2,9 +2,9 @@
   "name": "hello-world",
   "version": "0.0.0-development",
   "description": "demo project for sr-cli",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "browser": "dist/lib-rrio.umd.js",
+  "main": "dist/hello-world.js",
+  "module": "dist/hello-world.mjs",
+  "browser": "dist/hello-world.umd.js",
   "files": [
     "dist"
   ],

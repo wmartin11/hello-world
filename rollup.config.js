@@ -12,7 +12,7 @@ module.exports = [
   {
     input: 'lib/demo.js',
     output: {
-      name: 'demo',
+      name: 'hello-world',
       file: pkg.browser,
       format: 'umd',
       exports: 'named'
@@ -47,7 +47,6 @@ module.exports = [
       'net',
       'child_process'
     ],
-    preferBuiltins: true,
     output: [
       { file: pkg.main, format: 'cjs' },
       { file: pkg.module, format: 'es' }
