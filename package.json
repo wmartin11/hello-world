@@ -8,10 +8,14 @@
   "files": [
     "dist"
   ],
+  "release": {
+    "branch": "next"
+  },
+  "plugins": ["@semantic-release/commit-analyzer", "@semantic-release/release-notes-generator", "@semantic-release/npm"],
   "scripts": {
     "build": "npm run util:clean:build && npm run util:rollup -c",
     "commit": "git-cz",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "semantic-release",
     "test": "jasmine",
     "util:clean:build": "rm -rf build/",
     "util:clean:dist": "rm -r dist/*",
@@ -34,6 +38,9 @@
     "access": "registry"
   },
   "devDependencies": {
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/npm": "^5.1.4",
+    "@semantic-release/release-notes-generator": "^7.1.4",
     "commitizen": "^3.0.7",
     "cz-conventional-changelog": "^2.1.0",
     "ghooks": "^2.0.4",
