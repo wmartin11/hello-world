@@ -12,6 +12,6 @@ describe("Basic Test - Alt", () => {
   it('should return a greeting', () => {
     const greeting = run();
 
-    expect(greeting).toEqual('hello');
+    expect(greeting).toEqual('hello!');
   })
 });
