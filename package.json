@@ -33,6 +33,8 @@
     "access": "restricted"
   },
   "devDependencies": {
+    "commitizen": "^3.0.7",
+    "ghooks": "^2.0.4",
     "jasmine": "^3.4.0",
     "rollup": "^1.8.0",
     "rollup-plugin-commonjs": "^9.3.4",
@@ -43,5 +45,13 @@
   "dependencies": {
     "inquirer": "^6.2.2",
     "rxjs": "^6.4.0"
+  },
+  "czConfig": {
+    "path": "node_modules/cs-conventional-change"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test"
+    }
   }
 }
