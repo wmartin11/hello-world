@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/wmartin11/hello-world#readme",
   "publishConfig": {
-    "access": "registry"
+    "access": "public"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^6.1.0",
