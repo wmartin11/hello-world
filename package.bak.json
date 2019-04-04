@@ -1,0 +1,29 @@
+{
+  "name": "hello-world",
+  "version": "0.0.0-development",
+  "description": "demo project for sr-cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wmartin11/hello-world.git"
+  },
+  "keywords": [
+    "hello"
+  ],
+  "author": "wmartin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wmartin11/hello-world/issues"
+  },
+  "homepage": "https://github.com/wmartin11/hello-world#readme",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "devDependencies": {
+    "semantic-release": "^15.13.3"
+  }
+}
