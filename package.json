@@ -48,10 +48,10 @@
     "inquirer": "^6.2.2",
     "rxjs": "^6.4.0"
   },
-  "czConfig": {
-    "path": "node_modules/cs-conventional-changelog"
-  },
   "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
     "ghooks": {
       "pre-commit": "npm run test"
     }
