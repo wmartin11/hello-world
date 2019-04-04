@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/wmartin11/hello-world#readme",
   "publishConfig": {
-    "access": "restricted"
+    "access": "registry"
   },
   "devDependencies": {
     "commitizen": "^3.0.7",
