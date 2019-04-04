@@ -10,11 +10,12 @@
   ],
   "scripts": {
     "build": "npm run util:clean:build && npm run util:rollup -c",
+    "commit": "git-cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "jasmine",
     "util:clean:build": "rm -rf build/",
     "util:clean:dist": "rm -r dist/*",
-    "util:rollup": "rollup -c",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "jasmine"
+    "util:rollup": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -48,7 +49,7 @@
     "rxjs": "^6.4.0"
   },
   "czConfig": {
-    "path": "node_modules/cs-conventional-change"
+    "path": "node_modules/cs-conventional-changelog"
   },
   "config": {
     "ghooks": {
