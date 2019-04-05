@@ -13,11 +13,18 @@ describe("Basic Test - Alt", () => {
     const greeting = run();
 
     expect(greeting).toEqual('hello!');
-  })
+  });
 
   it('should provide a sessionManager', () => {
     const sessionManager = new SessionManager();
 
     expect(sessionManager).toBeDefined();
-  })
+  });
+
+  it('should initialize the sessionManager store', () => {
+    const sessionManager = new SessionManager();
+
+    sessionManager.init({name: 'walt'} );
+    expect(sessionManager.get('name')).toEqual('walt');
+  });
 });
