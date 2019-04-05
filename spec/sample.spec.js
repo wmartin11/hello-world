@@ -1,4 +1,4 @@
-const {run} = require('../lib/demo');
+const { run, SessionManager } = require('../lib/demo');
 
 describe("Basic Test - Alt", () => {
   it('should return correct data - alt', (done) => {
@@ -13,5 +13,11 @@ describe("Basic Test - Alt", () => {
     const greeting = run();
 
     expect(greeting).toEqual('hello!');
+  })
+
+  it('should provide a sessionManager', () => {
+    const sessionManager = new SessionManager();
+
+    expect(sessionManager).toBeDefined();
   })
 });
